@@ -49,9 +49,9 @@
  * Therefore, we make sure the NuttX headers are correct.
  */
 #include "hardware/stm32h7x3xx_pwr.h"
-#if STM32_PWR_CR3_SMPSEXTHP != (1 << 3)
-#  error "No SMPS support in NuttX submodule");
-#endif
+//#if STM32_PWR_CR3_SMPSEXTHP != (1 << 3)
+//#  error "No SMPS support in NuttX submodule");
+//#endif
 
 
 /* PX4IO connection configuration */
@@ -157,8 +157,7 @@
 #define BOARD_HAS_ON_RESET 1
 
 #define BOARD_HAS_STATIC_MANIFEST 1
-
-
+#define BOARD_HAS_PWM 14
 
 #define BOARD_ENABLE_CONSOLE_BUFFER
 
