@@ -2,7 +2,8 @@
 #
 # Board specific MAVLink startup script.
 #------------------------------------------------------------------------------
-
+# start mavlink on usb
+mavlink start -d /dev/ttyACM0
 # Start ADS-B receiver mavlink connection if console not present
 if [ ! -e /dev/console ]
 then
